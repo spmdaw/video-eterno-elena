@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Redirigiendo...</title>
+  <meta charset="UTF-8" />
+  <title>Redirigiendo...</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #87ceeb, #f0f8ff); /* Cielo azul clarito a blanco */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      font-size: 2rem;
+      flex-direction: column;
+      text-align: center;
+    }
+    a {
+      color: #fffacd;
+      text-decoration: underline;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    a:hover {
+      color: #ffd700;
+    }
+  </style>
 </head>
 <body>
-    <p>Redirigiendo al vídeo... Si no carga, haz <a href="https://youtu.be/7--Yq82nVOw">clic aquí</a>.</p>
-    <script>
-        window.location.href = "https://youtu.be/7--Yq82nVOw";
-    </script>
+  <p>Redirigiendo al vídeo... Si no carga, haz <a href="https://youtu.be/7--Yq82nVOw">clic aquí</a>.</p>
+  <script>
+    window.location.replace("https://youtu.be/7--Yq82nVOw");
+  </script>
 </body>
 </html>
+
